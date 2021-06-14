@@ -54,7 +54,7 @@ public class SilkablooieEvents {
                     loottable.generate(context).forEach(victim::entityDropItem);
                 }
             } else{
-                if (event.getSource().isExplosion() && event.getSource().getImmediateSource().getType() == ForgeRegistries.ENTITIES.getValue(SPORUS)) {
+                if (SilkablooieConfig.COMMON.sporiSilkBoolean.get() && event.getSource().isExplosion() && event.getSource().getImmediateSource().getType() == ForgeRegistries.ENTITIES.getValue(SPORUS)) {
                     double chance2 = 0.6;
                     if (creeper) {
                         chance2 = SilkablooieConfig.COMMON.silkLootChance.get();
