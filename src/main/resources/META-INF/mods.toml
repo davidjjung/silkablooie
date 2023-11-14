@@ -37,3 +37,10 @@ mandatory = true
 versionRange = "[6.2.0,)"
 ordering = "AFTER"
 side = "BOTH"
+
+[[dependencies.silkablooie]]
+modId = "savage_and_ravage"
+mandatory = false
+versionRange = "[5.0.5,)"
+ordering = "AFTER"
+side = "BOTH"

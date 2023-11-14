@@ -20,5 +20,7 @@ public class SilkablooieEntityTypeTagsProvider extends EntityTypeTagsProvider {
                 .addOptional(SilkablooieConstants.SWAMP_CREEPER);
         this.tag(SilkablooieEntityTypeTags.ADVANCED_TNT_DROPPERS).addOptional(SilkablooieConstants.CAVE_CREEPER).addOptional(SilkablooieConstants.DEEPER)
                 .addOptional(SilkablooieConstants.PEEPER);
+        this.tag(SilkablooieEntityTypeTags.COBWEB_DROPPERS).addOptional(SilkablooieConstants.SPIDER);
+        this.tag(SilkablooieEntityTypeTags.ADVANCED_COBWEB_DROPPERS).addOptional(SilkablooieConstants.CAVE_SPIDER);
     }
 }

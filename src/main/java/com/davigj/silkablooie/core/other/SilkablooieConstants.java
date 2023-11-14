@@ -3,9 +3,10 @@ package com.davigj.silkablooie.core.other;
 import net.minecraft.resources.ResourceLocation;
 
 public class SilkablooieConstants {
-    public static final String CREEPER_OVERHAUL = "creeper_overhaul";
+    public static final String CREEPER_OVERHAUL = "creeperoverhaul";
     public static final String CNC = "caverns_and_chasms";
     public static final String MINECRAFT = "minecraft";
+    public static final String SNR = "savage_and_ravage";
 
     public static final ResourceLocation CREEPER = new ResourceLocation(MINECRAFT, "creeper");
     public static final ResourceLocation BADLANDS_CREEPER = new ResourceLocation(CREEPER_OVERHAUL, "badlands_creeper");
@@ -20,4 +21,6 @@ public class SilkablooieConstants {
     public static final ResourceLocation SWAMP_CREEPER = new ResourceLocation(CREEPER_OVERHAUL, "swamp_creeper");
     public static final ResourceLocation DEEPER = new ResourceLocation(CNC, "deeper");
     public static final ResourceLocation PEEPER = new ResourceLocation(CNC, "peeper");
+    public static final ResourceLocation SPIDER = new ResourceLocation(MINECRAFT, "spider");
+    public static final ResourceLocation CAVE_SPIDER = new ResourceLocation(MINECRAFT, "cave_spider");
 }
