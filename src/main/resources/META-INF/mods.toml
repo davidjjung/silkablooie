@@ -1,0 +1,39 @@
+modLoader = "javafml"
+loaderVersion = "[32,)"
+issueTrackerURL = "https://github.com/davidjjung/silkablooie/issues"
+license = "MIT License"
+
+[[mods]]
+modId = "silkablooie"
+version = "${file.jarVersion}"
+logoFile = "logo.png"
+itemIcon = "minecraft:tnt"
+configBackground = "minecraft:textures/block/tnt_side.png"
+authors = "DavigJ"
+credits = "Shoutout to Freshah, this mod's number one fan"
+displayURL = ""
+displayName = "Silkablooie"
+description = '''
+    Mob drops related to Silk Touch pickaxes.
+    '''
+
+[[dependencies.silkablooie]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.19.2,1.19.3)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.silkablooie]]
+modId = "forge"
+mandatory = true
+versionRange = "[43.3.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.silkablooie]]
+modId = "blueprint"
+mandatory = true
+versionRange = "[6.2.0,)"
+ordering = "AFTER"
+side = "BOTH"
