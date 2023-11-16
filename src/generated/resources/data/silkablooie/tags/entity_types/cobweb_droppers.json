@@ -3,6 +3,10 @@
     {
       "id": "minecraft:spider",
       "required": false
+    },
+    {
+      "id": "neapolitan:plantain_spider",
+      "required": false
     }
   ]
 }

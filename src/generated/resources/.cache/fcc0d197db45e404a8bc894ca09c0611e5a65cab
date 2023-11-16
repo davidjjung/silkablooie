@@ -1,5 +1,5 @@
-// 1.19.2	2023-11-13T20:38:39.0819914	Tags for minecraft:entity_type
+// 1.19.2	2023-11-15T20:43:33.8398001	Tags for minecraft:entity_type
 03a397a7fa49b9439f419a3a47d31425b27eb41d data/silkablooie/tags/entity_types/advanced_cobweb_droppers.json
 547030ae92107e9d1e6523f70fe93b5a260b5cf6 data/silkablooie/tags/entity_types/advanced_tnt_droppers.json
-55bb93b8b1fafeaca3f82f32605a5a7295a43479 data/silkablooie/tags/entity_types/cobweb_droppers.json
+7be702606e55e275a2fbabd76a30a96ec4d0a5f2 data/silkablooie/tags/entity_types/cobweb_droppers.json
 0d823bf2c217ad0bf25059741446bfc6db6f490d data/silkablooie/tags/entity_types/tnt_droppers.json
