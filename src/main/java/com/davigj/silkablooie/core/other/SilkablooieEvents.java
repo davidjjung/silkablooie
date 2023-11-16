@@ -41,14 +41,14 @@ public class SilkablooieEvents {
         }
         if (isRelevant(SilkablooieEntityTypeTags.TNT_DROPPERS, event.getSource(), victim, SilkablooieConfig.COMMON.TNTDropChance.get()) && isSilky) {
             ItemEntity tnt = new ItemEntity(victim.level, victim.getX(), victim.getY(), victim.getZ(), Items.TNT.getDefaultInstance());
-            if (ModList.get().isLoaded(SilkablooieConstants.SNR) && SilkablooieConfig.COMMON.snrCompat.get() && victim instanceof Creeper) {
+            if (ModList.get().isLoaded(SilkablooieConstants.SNR) && SilkablooieConfig.COMMON.snrCompat.get() && victim.getType().toString().equals("entity.minecraft.creeper")) {
                 tnt = new ItemEntity(victim.level, victim.getX(), victim.getY(), victim.getZ(), SRBlocks.SPORE_BOMB.get().asItem().getDefaultInstance());
             }
             victim.level.addFreshEntity(tnt);
         }
         if (isRelevant(SilkablooieEntityTypeTags.ADVANCED_TNT_DROPPERS, event.getSource(), victim, SilkablooieConfig.COMMON.advancedTNTDropChance.get()) && isSilky) {
             ItemEntity tnt = new ItemEntity(victim.level, victim.getX(), victim.getY(), victim.getZ(), Items.TNT.getDefaultInstance());
-            if (ModList.get().isLoaded(SilkablooieConstants.SNR) && SilkablooieConfig.COMMON.snrCompat.get() && victim instanceof Creeper) {
+            if (ModList.get().isLoaded(SilkablooieConstants.SNR) && SilkablooieConfig.COMMON.snrCompat.get() && victim.getType().toString().equals("entity.minecraft.creeper")) {
                 tnt = new ItemEntity(victim.level, victim.getX(), victim.getY(), victim.getZ(), SRBlocks.SPORE_BOMB.get().asItem().getDefaultInstance());
             }
             victim.level.addFreshEntity(tnt);

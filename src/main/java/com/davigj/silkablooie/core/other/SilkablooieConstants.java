@@ -6,6 +6,7 @@ public class SilkablooieConstants {
     public static final String CREEPER_OVERHAUL = "creeperoverhaul";
     public static final String CNC = "caverns_and_chasms";
     public static final String MINECRAFT = "minecraft";
+    public static final String NEAPOLITAN = "neapolitan";
     public static final String SNR = "savage_and_ravage";
 
     public static final ResourceLocation CREEPER = new ResourceLocation(MINECRAFT, "creeper");
@@ -23,4 +24,5 @@ public class SilkablooieConstants {
     public static final ResourceLocation PEEPER = new ResourceLocation(CNC, "peeper");
     public static final ResourceLocation SPIDER = new ResourceLocation(MINECRAFT, "spider");
     public static final ResourceLocation CAVE_SPIDER = new ResourceLocation(MINECRAFT, "cave_spider");
+    public static final ResourceLocation PLANTAIN_SPIDER = new ResourceLocation(NEAPOLITAN, "plantain_spider");
 }
