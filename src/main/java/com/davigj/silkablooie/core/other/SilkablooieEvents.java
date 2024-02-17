@@ -59,7 +59,7 @@ public class SilkablooieEvents {
         }
     }
 
-    public static boolean isRelevant(TagKey<EntityType<?>> tag, DamageSource source, LivingEntity victim, Float dropChance) {
+    public static boolean isRelevant(TagKey<EntityType<?>> tag, DamageSource source, LivingEntity victim, double dropChance) {
         return victim.getType().is(tag) && !source.isIndirect() && victim.getRandom().nextDouble() < dropChance;
     }
 
