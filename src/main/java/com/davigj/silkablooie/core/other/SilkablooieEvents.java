@@ -10,7 +10,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.item.ItemEntity;
-import net.minecraft.world.entity.monster.Creeper;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -22,8 +21,6 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 
-import java.util.Random;
-
 @Mod.EventBusSubscriber(modid = SilkablooieMod.MOD_ID)
 public class SilkablooieEvents {
 
@@ -31,8 +28,8 @@ public class SilkablooieEvents {
     public static void onLivingDeath (LivingDeathEvent event) {
         LivingEntity victim = event.getEntity();
         Entity attacker = event.getSource().getEntity();
-        Player player = null;
-        ItemStack stack = null;
+        Player player;
+        ItemStack stack;
         boolean isSilky = false;
         if (attacker instanceof Player) {
             player = (Player) attacker;
@@ -63,7 +60,7 @@ public class SilkablooieEvents {
         }
     }
 
-    public static boolean isRelevant(TagKey<EntityType<?>> tag, DamageSource source, LivingEntity victim, Float dropChance) {
+    public static boolean isRelevant(TagKey<EntityType<?>> tag, DamageSource source, LivingEntity victim, double dropChance) {
         return victim.getType().is(tag) && !source.isProjectile() && !source.isMagic() && victim.getRandom().nextDouble() < dropChance;
     }
 
