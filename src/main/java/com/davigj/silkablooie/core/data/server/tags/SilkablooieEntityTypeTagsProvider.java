@@ -3,16 +3,21 @@ package com.davigj.silkablooie.core.data.server.tags;
 import com.davigj.silkablooie.core.SilkablooieMod;
 import com.davigj.silkablooie.core.other.SilkablooieConstants;
 import com.davigj.silkablooie.core.other.tags.SilkablooieEntityTypeTags;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.EntityTypeTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import org.jetbrains.annotations.NotNull;
+
+import java.util.concurrent.CompletableFuture;
 
 public class SilkablooieEntityTypeTagsProvider extends EntityTypeTagsProvider {
-    public SilkablooieEntityTypeTagsProvider(DataGenerator generator, ExistingFileHelper existingFileHelper) {
-        super(generator, SilkablooieMod.MOD_ID, existingFileHelper);
+    public SilkablooieEntityTypeTagsProvider(String modid, PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, ExistingFileHelper fileHelper) {
+        super(output, lookupProvider, modid, fileHelper);
     }
     @Override
-    protected void addTags() {
+    protected void addTags(HolderLookup.@NotNull Provider p_255894_) {
         this.tag(SilkablooieEntityTypeTags.TNT_DROPPERS).addOptional(SilkablooieConstants.CREEPER)
                 .addOptional(SilkablooieConstants.BADLANDS_CREEPER).addOptional(SilkablooieConstants.BEACH_CREEPER)
                 .addOptional(SilkablooieConstants.DARK_OAK_CREEPER).addOptional(SilkablooieConstants.DESERT_CREEPER).addOptional(SilkablooieConstants.DRIPSTONE_CREEPER)
